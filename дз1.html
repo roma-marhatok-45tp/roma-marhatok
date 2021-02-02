@@ -4,32 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 <body>
     <button onclick="change()" id="b1" >поменять стлиль</button>
     <button onclick="nextpage()" id="b2">след. страница</button>
-    <script> 
-    var a=0
-function change(){
-        
-        a++;
-            if(a>2){
-                a=1
-            }
-            if(a==1){
-                document.body.style.background="#499288"
-                
-            }
-            else if(a==2){
-                document.body.style.background="black"
-            }
-    }
-</script>
-   <script>
-       function nextpage(){
-            window.location.href='URL2'
-       }
-   </script>
+    
 </body>
 </html>
