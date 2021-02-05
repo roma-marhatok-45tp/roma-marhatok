@@ -1,0 +1,23 @@
+.page{
+    background: rgb(255, 255, 255);
+    color: black;
+}
+.pagedark{
+    background: black;
+    color: white;
+
+}
+#buttonid{
+    background: black;
+    color: white;
+    border:4px solid black  ;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#button1{
+    background: white;
+    color: black;
+    border:  4px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
