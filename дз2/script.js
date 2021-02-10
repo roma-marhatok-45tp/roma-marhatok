@@ -2,7 +2,8 @@
 var temp={
     canad:12,
     german:34,
-    italy:44,
+    italy:24,
+    poland:5,
 }
 var a=0,b=0,c=0
 function sred(){
@@ -15,7 +16,13 @@ function sred(){
 }
 sred()
 function max(){
-alert('max tmp:'+Math.max(temp[key]))
+    var max=0
+for(key in temp){
+    if(max<temp[key]){
+        max=temp[key]
+        }
+    }
+    alert(max)
 }
 max()
 
