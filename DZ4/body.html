@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+<div id="tablebtn">
+   <table class="table" id = tableid>
+    <thead>      
+        <th>заголовок 1</th>
+        <th>заголовок 2</th>
+        <th>заголовок 3</th>
+        <th>заголовок 4</th>
+        <th>заголовок 5</th>
+        <th>заголовок 6</th>
+        <th>заголовок 7</th>
+        <th>заголовок 8</th>
+        <th>заголовок 9</th>
+    </thead>
+    <tbody>      
+    </tbody>
+   </table>
+   <button id="create">Создать</button>
+</div>
+
+   <div id=modal class="modal">
+        <div id=modal-content class="modal-content">
+        <label>Тип:
+            <select action ="body.html" name="seltype" id="select">
+                <option value=""></option>
+                <option value="pc">Pc</option>
+                <option value="lighbook">Lightbook</option>
+                <option value="Server">Server</option>
+            </select>
+         </label>
+    <form method="GET" class="formPC" >
+    <p>
+        <Label>Имя:
+            <input type = "value" id=pc required>
+        </Label>
+    </p>
+    <p>
+        <label>количество ядер:
+                <input type="number"  id=pc  required>
+        </label>
+    </p>
+    <p>
+        <label>Процессор:
+            <input type="value"  id=pc  required>
+        </label>
+    </p>
+    <p>
+        <label>Тип процеесора:
+            <input type="value"  id=pc  required>
+        </label>
+    </p>
+    <p>
+        <label>Видеокарта:
+            <input type="value" id=pc  required>
+        </label>
+    </p>
+    <p>
+        <label>ОЗУ:
+            <input type="value"  id=pc  required>
+        </label>
+    </p>
+    </form>
+    <form action="body.html" method="GET" class="formLightBook">
+    <p>
+        <Label>Имя:
+            <input type = "value"  id=lightbook  required>
+        </Label>
+    </p>
+    <p>
+        <label>количество ядер:
+                <input type="number"  id=lightbook  required>
+        </label>
+    </p>
+    <p>
+        <label>Процессор:
+            <input type="value"  id=lightbook  required>
+        </label>
+    </p>
+    <p>
+        <label>Тип процеcсора:
+            <input type="value"  id=lightbook  required>
+        </label>
+    </p>
+    <p>
+        <label>Видеокарта:
+            <input type="value" id=lightbook  required>
+        </label>
+    </p>
+    <p>
+        <label>ОЗУ:
+            <input type="value" id=lightbook  required>
+        </label>
+    </p>
+    <p>
+        <label>Вес:
+            <input type = "number" id=lightbook  required>
+        </label>
+    </p>
+    <p>
+        <label>Батарея:
+            <input type="value" id=lightbook  required>
+        </label>
+    </p>
+    </form>
+    <form action="body.html" method="POST" class="formServer" >
+    <p>
+        <Label>Имя:
+            <input type = "value" id=server  required>
+        </Label>
+    </p>
+    <p>
+        <label>количество ядер:
+                <input type="value" id=server  required>
+        </label>
+    </p>
+    <p>
+        <label>Процессор:
+            <input type="number" id=server  required>
+        </label>
+    </p>
+    <p>
+        <label>Тип процеcсора:
+            <input type="value" id=server  required>
+        </label>
+    </p>
+    <p>
+        <label>Видеокарта:
+            <input type="value" id=server  required>
+        </label>
+    </p>
+    <p>
+        <label>ОЗУ:
+            <input type="value" id=server  required>
+        </label>
+    </p>
+    <p>
+        <label>Размер:
+            <input type = "value" id=server  required>
+        </label>
+    </p>
+    <p>
+        <label>Производительность:
+            <input type="value" id=server  required>
+        </label>
+    </p>
+   
+    </form>  
+        <button id = closemodal>сохранить</button>
+        </div>
+   </div>
+    <script src="Pc.js"></script>
+    <script src="Lightbook.js"></script>
+    <script src="Server.js"></script>
+    <script src="scriptbody.js"></script>
+</body>
+</html>
